@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades de Física</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            font-size: 18px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+        }
+        .atividade {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        label {
+            font-size: 18px;
+        }
+        textarea {
+            width: 100%;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .resposta {
+            display: none;
+            margin-top: 10px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 4px;
+        }
+    </style>
+    <script>
+        function mostrarResposta(id) {
+            var resposta = document.getElementById(id);
+            if (resposta.style.display === "none") {
+                resposta.style.display = "block";
+            } else {
+                resposta.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Atividades de Física</h1>
+
+    <div class="atividade">
+        <h2>Atividade 1: Primeira Lei de Newton</h2>
+        <p>Descreva a Primeira Lei de Newton e dê um exemplo prático.</p>
+        <p>Habilidade: Dinâmica - Compreender a Primeira Lei de Newton</p>
+        <label for="resposta1">Resposta:</label>
+        <textarea id="resposta1" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta1')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta1" class="resposta">
+            <p>A Primeira Lei de Newton, também conhecida como Lei da Inércia, afirma que um corpo em repouso permanece em repouso e um corpo em movimento continua em movimento retilíneo uniforme a menos que uma força externa atue sobre ele. Exemplo prático: um passageiro em um ônibus sente seu corpo ser jogado para frente quando o ônibus freia bruscamente.</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 2: Energia Cinética</h2>
+        <p>Calcule a energia cinética de um objeto de 2 kg que se move a uma velocidade de 10 m/s.</p>
+        <p>Habilidade: Trabalho e energia - Analisar a energia cinética</p>
+        <label for="resposta2">Resposta:</label>
+        <textarea id="resposta2" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta2')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta2" class="resposta">
+            <p>Energia Cinética (Ec) = (1/2) * m * v² = (1/2) * 2 kg * (10 m/s)² = 1 * 100 = 100 J</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 3: Energia Potencial Gravitacional</h2>
+        <p>Calcule a energia potencial gravitacional de um objeto de 5 kg a uma altura de 3 m.</p>
+        <p>Habilidade: Trabalho e energia - Analisar a energia potencial gravitacional</p>
+        <label for="resposta3">Resposta:</label>
+        <textarea id="resposta3" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta3')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta3" class="resposta">
+            <p>Energia Potencial Gravitacional (Ep) = m * g * h = 5 kg * 9,8 m/s² * 3 m = 147 J</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 4: Segunda Lei de Newton</h2>
+        <p>Explique a Segunda Lei de Newton e forneça um exemplo que a ilustre.</p>
+        <p>Habilidade: Dinâmica - Compreender a Segunda Lei de Newton</p>
+        <label for="resposta4">Resposta:</label>
+        <textarea id="resposta4" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta4')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta4" class="resposta">
+            <p>A Segunda Lei de Newton, também conhecida como Princípio Fundamental da Dinâmica, afirma que a força resultante agindo sobre um corpo é igual ao produto da massa do corpo pela sua aceleração (F = m * a). Exemplo: empurrar um carrinho de supermercado; quanto mais força você aplica, maior a aceleração do carrinho.</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 5: Energia Potencial Elástica</h2>
+        <p>Calcule a energia potencial elástica de uma mola com constante elástica de 150 N/m comprimida em 0,2 m.</p>
+        <p>Habilidade: Trabalho e energia - Analisar a energia potencial elástica</p>
+        <label for="resposta5">Resposta:</label>
+        <textarea id="resposta5" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta5')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta5" class="resposta">
+            <p>Energia Potencial Elástica (Ee) = (1/2) * k * x² = (1/2) * 150 N/m * (0,2 m)² = 3 J</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 6: Conservação da Energia Mecânica</h2>
+        <p>Explique o princípio da conservação da energia mecânica e dê um exemplo onde ele se aplica.</p>
+        <p>Habilidade: Trabalho e energia - Analisar a conservação da energia mecânica</p>
+        <label for="resposta6">Resposta:</label>
+        <textarea id="resposta6" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta6')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta6" class="resposta">
+            <p>O princípio da conservação da energia mecânica afirma que em um sistema isolado, sem forças dissipativas como o atrito, a soma das energias cinética e potencial permanece constante. Exemplo: em uma montanha-russa, a energia potencial no ponto mais alto se converte em energia cinética na descida.</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 7: Terceira Lei de Newton</h2>
+        <p>Descreva a Terceira Lei de Newton e forneça um exemplo prático.</p>
+        <p>Habilidade: Dinâmica - Compreender a Terceira Lei de Newton</p>
+        <label for="resposta7">Resposta:</label>
+        <textarea id="resposta7" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta7')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta7" class="resposta">
+            <p>A Terceira Lei de Newton, também conhecida como Lei da Ação e Reação, afirma que para toda ação há uma reação de igual intensidade e em sentido oposto. Exemplo: quando você empurra uma parede, a parede empurra você com a mesma força em sentido contrário.</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 8: Trabalho de uma Força</h2>
+        <p>Calcule o trabalho realizado por uma força de 50 N que desloca um objeto em 5 m na mesma direção da força.</p>
+        <p>Habilidade: Trabalho e energia - Compreender o conceito de trabalho</p>
+        <label for="resposta8">Resposta:</label>
+        <textarea id="resposta8" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta8')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta8" class="resposta">
+            <p>Trabalho (τ) = F * d = 50 N * 5 m = 250 J</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 9: Força Resultante</h2>
+        <p>Calcule a força resultante em um objeto de 10 kg que acelera a 2 m/s².</p>
+        <p>Habilidade: Dinâmica - Compreender o conceito de força</p>
+        <label for="resposta9">Resposta:</label>
+        <textarea id="resposta9" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta9')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta9" class="resposta">
+            <p>Força Resultante (Fr) = m * a = 10 kg * 2 m/s² = 20 N</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 10: Forças de Contato e de Campo</h2>
+        <p>Diferencie forças de contato de forças de campo e forneça exemplos de cada.</p>
+        <p>Habilidade: Dinâmica - Compreender os tipos de força</p>
+        <label for="resposta10">Resposta:</label>
+        <textarea id="resposta10" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta10')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta10" class="resposta">
+            <p>Forças de contato: são aquelas que ocorrem com contato físico entre os corpos, como força de atrito e força normal. Forças de campo: são aquelas que atuam à distância, sem necessidade de contato, como força gravitacional e força magnética.</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 11: Trabalho de uma Força Variável</h2>
+        <p>Explique como se calcula o trabalho de uma força variável.</p>
+        <p>Habilidade: Trabalho e energia - Compreender o trabalho de uma força variável</p>
+        <label for="resposta11">Resposta:</label>
+        <textarea id="resposta11" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta11')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta11" class="resposta">
+            <p>O trabalho de uma força variável é calculado pela área sob o gráfico da força em função do deslocamento. Quando a força varia de forma complexa, divide-se o gráfico em formas geométricas conhecidas, calcula-se a área de cada uma e somam-se as áreas.</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 12: Referencial Inercial</h2>
+        <p>Explique o conceito de referencial inercial e dê um exemplo.</p>
+        <p>Habilidade: Dinâmica - Compreender o referencial inercial</p>
+        <label for="resposta12">Resposta:</label>
+        <textarea id="resposta12" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta12')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta12" class="resposta">
+            <p>Um referencial inercial é aquele no qual um corpo não tem seu estado de movimento ou de repouso alterado a menos que uma força seja aplicada. Exemplo: um avião voando em linha reta e a uma velocidade constante.</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 13: Equilíbrio Estático e Dinâmico</h2>
+        <p>Diferencie equilíbrio estático de equilíbrio dinâmico.</p>
+        <p>Habilidade: Dinâmica - Compreender os estados de equilíbrio</p>
+        <label for="resposta13">Resposta:</label>
+        <textarea id="resposta13" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta13')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta13" class="resposta">
+            <p>Equilíbrio estático ocorre quando um corpo está em repouso e a soma das forças que atuam sobre ele é zero. Equilíbrio dinâmico ocorre quando um corpo está em movimento com velocidade constante e a soma das forças que atuam sobre ele é zero.</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 14: Trabalho de uma Força Elástica</h2>
+        <p>Calcule o trabalho realizado por uma força elástica de uma mola com constante elástica de 200 N/m e deformada em 0,1 m.</p>
+        <p>Habilidade: Trabalho e energia - Compreender o trabalho da força elástica</p>
+        <label for="resposta14">Resposta:</label>
+        <textarea id="resposta14" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta14')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta14" class="resposta">
+            <p>Trabalho (τ) = (1/2) * k * x² = (1/2) * 200 N/m * (0,1 m)² = 1 J</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 15: Força de Atrito</h2>
+        <p>Explique a diferença entre força de atrito estático e força de atrito cinético.</p>
+        <p>Habilidade: Dinâmica - Compreender as forças de atrito</p>
+        <label for="resposta15">Resposta:</label>
+        <textarea id="resposta15" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta15')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta15" class="resposta">
+            <p>Força de atrito estático atua entre duas superfícies que não estão se movendo uma em relação à outra e impede o início do movimento. Força de atrito cinético atua entre superfícies que estão em movimento relativo e resiste ao movimento.</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades de Matemática</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+        }
+        .atividade {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        label {
+            font-size: 18px;
+        }
+        textarea {
+            width: 100%;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .resposta {
+            display: none;
+            margin-top: 10px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 4px;
+        }
+    </style>
+    <script>
+        function mostrarResposta(id) {
+            var resposta = document.getElementById(id);
+            if (resposta.style.display === "none") {
+                resposta.style.display = "block";
+            } else {
+                resposta.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Atividades de Matemática</h1>
+
+    <div class="atividade">
+        <h2>Atividade 1: Comparar e ordenar frações</h2>
+        <p>Comparar e ordenar as frações 3/4, 2/3 e 5/6.</p>
+        <p>Habilidade: Ma0710</p>
+        <label for="resposta1">Resposta:</label>
+        <textarea id="resposta1" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta1')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta1" class="resposta">
+            <p>3/4 = 0,75</p>
+            <p>2/3 = 0,666...</p>
+            <p>5/6 = 0,833...</p>
+            <p>Ordem: 2/3, 3/4, 5/6</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 2: Cálculo de área e perímetro</h2>
+        <p>Calcular a área e o perímetro de um retângulo de 5 cm de comprimento e 3 cm de largura.</p>
+        <p>Habilidade: Ma0708</p>
+        <label for="resposta2">Resposta:</label>
+        <textarea id="resposta2" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta2')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta2" class="resposta">
+            <p>Área: 5 cm x 3 cm = 15 cm²</p>
+            <p>Perímetro: 2 x (5 cm + 3 cm) = 2 x 8 cm = 16 cm</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 3: Classificação de ângulos</h2>
+        <p>Classificar os ângulos de um triângulo com ângulos de 40°, 60° e 80°.</p>
+        <p>Habilidade: Ma0711</p>
+        <label for="resposta3">Resposta:</label>
+        <textarea id="resposta3" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta3')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta3" class="resposta">
+            <p>Triângulo acutângulo: Todos os ângulos são menores que 90°.</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 4: Conversão de fração para decimal</h2>
+        <p>Converter a fração 3/8 para número decimal.</p>
+        <p>Habilidade: Ma0712</p>
+        <label for="resposta4">Resposta:</label>
+        <textarea id="resposta4" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta4')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta4" class="resposta">
+            <p>3/8 = 3 ÷ 8 = 0,375</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 5: Identificação de frações equivalentes</h2>
+        <p>Identificar se as frações 4/6 e 2/3 são equivalentes.</p>
+        <p>Habilidade: Ma0713</p>
+        <label for="resposta5">Resposta:</label>
+        <textarea id="resposta5" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta5')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta5" class="resposta">
+            <p>4/6 = 2/3, pois 4 ÷ 2 = 2 e 6 ÷ 2 = 3</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 6: Cálculo de volume</h2>
+        <p>Calcular o volume de um cubo com aresta de 4 cm.</p>
+        <p>Habilidade: Ma0708</p>
+        <label for="resposta6">Resposta:</label>
+        <textarea id="resposta6" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta6')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta6" class="resposta">
+            <p>Volume: 4 cm x 4 cm x 4 cm = 64 cm³</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 7: Conversão de decimal para fração</h2>
+        <p>Converter o número decimal 0,75 para fração.</p>
+        <p>Habilidade: Ma0712</p>
+        <label for="resposta7">Resposta:</label>
+        <textarea id="resposta7" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta7')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta7" class="resposta">
+            <p>0,75 = 75/100 = 3/4</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 8: Resolução de problemas com frações</h2>
+        <p>Resolver: Um bolo foi dividido em 8 partes iguais. Maria comeu 3 partes. Que fração do bolo Maria comeu?</p>
+        <p>Habilidade: Ma0714</p>
+        <label for="resposta8">Resposta:</label>
+        <textarea id="resposta8" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta8')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta8" class="resposta">
+            <p>Maria comeu 3/8 do bolo.</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 9: Representação de números na reta numérica</h2>
+        <p>Colocar o número 0,6 e 1,2 na reta numérica.</p>
+        <p>Habilidade: Ma0715</p>
+        <label for="resposta9">Resposta:</label>
+        <textarea id="resposta9" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta9')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta9" class="resposta">
+            <p>0,6 está entre 0 e 1; 1,2 está entre 1 e 2.</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 10: Cálculo de média aritmética</h2>
+        <p>Calcular a média aritmética dos números 4, 8 e 12.</p>
+        <p>Habilidade: Ma0716</p>
+        <label for="resposta10">Resposta:</label>
+        <textarea id="resposta10" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta10')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta10" class="resposta">
+            <p>Média: (4 + 8 + 12) / 3 = 24 / 3 = 8</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 11: Resolução de equações</h2>
+        <p>Resolver a equação: 2x + 5 = 15.</p>
+        <p>Habilidade: Ma0717</p>
+        <label for="resposta11">Resposta:</label>
+        <textarea id="resposta11" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta11')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta11" class="resposta">
+            <p>2x + 5 = 15</p>
+            <p>2x = 15 - 5</p>
+            <p>2x = 10</p>
+            <p>x = 10 / 2</p>
+            <p>x = 5</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 12: Conversão de medidas</h2>
+        <p>Converter 5 km em metros.</p>
+        <p>Habilidade: Ma0708</p>
+        <label for="resposta12">Resposta:</label>
+        <textarea id="resposta12" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta12')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta12" class="resposta">
+            <p>5 km = 5 x 1000 m = 5000 m</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 13: Identificação de números primos</h2>
+        <p>Identificar se o número 29 é primo.</p>
+        <p>Habilidade: CNT0718</p>
+        <label for="resposta13">Resposta:</label>
+        <textarea id="resposta13" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta13')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta13" class="resposta">
+            <p>O número 29 é primo porque é divisível apenas por 1 e por ele mesmo.</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 14: Resolução de problemas com porcentagem</h2>
+        <p>Calcular 20% de 150.</p>
+        <p>Habilidade: MA0719</p>
+        <label for="resposta14">Resposta:</label>
+        <textarea id="resposta14" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta14')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta14" class="resposta">
+            <p>20% de 150 = 0,2 x 150 = 30</p>
+        </div>
+    </div>
+
+    <div class="atividade">
+        <h2>Atividade 15: Resolução de problemas com proporções</h2>
+        <p>Resolver: Se 3 lápis custam R$9,00, quanto custarão 7 lápis?</p>
+        <p>Habilidade: HMA0720</p>
+        <label for="resposta15">Resposta:</label>
+        <textarea id="resposta15" rows="4"></textarea>
+        <button onclick="mostrarResposta('respostaCompleta15')">Mostrar Resposta Completa</button>
+        <div id="respostaCompleta15" class="resposta">
+            <p>Proporção: 3 lápis / 9 reais = 7 lápis / x reais</p>
+            <p>3 / 9 = 7 / x</p>
+            <p>3x = 63</p>
+            <p>x = 63 / 3</p>
+            <p>x = 21 reais</p>
+        </div>
+    </div>
+
+</body>
+</html>
